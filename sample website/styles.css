@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fafbfc;
+    color: #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #3899ec;
+    font-weight: normal;
+}
+
+.nav-links span {
+    margin-right: 28px;
+    font-size: 1.1rem;
+    color: #222;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.nav-links span:hover {
+    color: #3899ec;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.search-bar {
+    padding: 7px 14px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.subscribe-btn {
+    background: #fff;
+    border: 1px solid #222;
+    border-radius: 20px;
+    padding: 7px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.create-btn {
+    background: #3899ec;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 7px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding: 0 24px;
+    min-height: 80vh;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 32px;
+    margin-top: 40px;
+    gap: 28px;
+}
+
+.social-icons a {
+    color: #222;
+    font-size: 1.3rem;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #3899ec;
+}
+
+.main-content {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.hero-img img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.intro {
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 18px;
+    line-height: 1.7;
+}
+
+.start-btn {
+    display: block;
+    margin: 32px auto 40px auto;
+    background: #3899ec;
+    color: #fff;
+    border: none;
+    border-radius: 22px;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.start-btn:hover {
+    background: #256bb2;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+a {
+    color: #3899ec;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
