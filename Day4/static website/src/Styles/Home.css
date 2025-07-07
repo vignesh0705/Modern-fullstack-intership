@@ -1,0 +1,77 @@
+.homecontainer {
+  width: 60%;
+  padding: 60px;
+  background: url('../images/background.jpg') no-repeat center center/cover;
+  color: white;
+  float: left;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.homecontainer h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.homecontainer p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  max-width: 90%;
+}
+
+.formcontainer {
+  width: 40%;
+  height: 100vh;
+  background-color: lightgray;
+  color: rgb(35, 35, 35);
+  float: right;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.formcontainer h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+form button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: ghostwhite;
+  background-color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e2e2e2;
+}

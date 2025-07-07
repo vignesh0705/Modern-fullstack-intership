@@ -1,0 +1,78 @@
+.explorecontainer{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+.explorecontainer h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.explorecontainer p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.explore-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #1e2a30;
+  background-color: #00f0ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.explore-button:hover {
+  background-color: #00c0cc;
+}
+
+.explore-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 40px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.explore-container img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 20px;
+  object-fit: cover;
+}
+
+.explore-content {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.explore-content h1 {
+  font-size: 32px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.explore-content p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .explore-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .explore-content {
+    align-items: center;
+  }
+}
