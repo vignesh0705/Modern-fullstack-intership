@@ -127,27 +127,110 @@ form button:hover {
   }
 }
 
-.mycommunity {
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background-color: #282828;
-}
-.mycommunity h1 {
+.youtubechannel {
+  background-color: #0f0f0f;
   color: white;
-  font-size: 48px;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
-  
+  font-family: Arial, sans-serif;
+  padding-bottom: 40px;
+}
 
+.bannerContainer {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
 }
-.mycommunity p{
+
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlayText {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffe600;
+  text-shadow: 2px 2px #000;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  margin: 40px 20px 0;
+  gap: 24px;
+}
+
+.logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+.details h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.details p {
+  margin: 4px 0;
+  color: #aaa;
+}
+
+.subscribe {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.subscribe:hover {
+  background-color: #ccc;
+}
+
+.mycommunitycontainer {
+  background-color: #0f0f0f;
   color: white;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-top: 20px;
-  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.banner {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffe600;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px black;
+}
+
+.content {
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 

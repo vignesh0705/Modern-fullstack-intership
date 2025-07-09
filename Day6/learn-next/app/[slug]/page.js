@@ -1,17 +1,28 @@
+import Image from "next/image";
+// import luffy from "@/public/images/luffy.jpg"; 
+
 export const metadata = {
-    title: "My YouTube Channel",
-    description: "This is my YouTube channel page",
-}
+  title: "My Community",
+  description: "This is my community page",
+};
 
-const YouTubeChannel=({params}) => {
-    
-    return (
-        <div className="youtubechannel">
-            <h1>My YouTube Channel </h1>
-            <p>Welcome to my YouTube channel page!</p>
-            <p>This is  youtube channel: {params.slug}</p>
+const MyCommunity = ({ params }) => {
+  return (
+    <div className={"mycommunitycontainer"}>
+      <div className={"banner"}>
+        {/* <Image src={luffy} alt="Luffy" className={"image"} priority /> */}
+        <div className={"overlay"}>
+          <h1>My Community</h1>
         </div>
-    )
-}
+      </div>
 
-export default YouTubeChannel;
+      <div className={"content"}>
+        <p>Welcome to my community page!</p>
+        <p>This is the YouTube Channel: {params.slug}</p>
+        <p>This is the Channel: {params.slugs}</p>
+      </div>
+    </div>
+  );
+};
+
+export default MyCommunity;
