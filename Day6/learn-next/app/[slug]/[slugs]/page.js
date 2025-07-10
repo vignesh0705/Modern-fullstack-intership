@@ -1,34 +1,36 @@
 import Image from "next/image";
-import banner from "@/public/background.jpg";
-import logo from "@/public/luffy.jpg";
+import Channelcomp from "@/components/Channelcomp"; 
+import background from "@/public/background.jpg";
 
 export const metadata = {
-  title: "My YouTube Channel",
-  description: "This is my YouTube channel page",
+  title: "My Community",
+  description: "This is my community page",
 };
 
-const YouTubeChannel = ({ params }) => {
+const MyCommunity = ({ params }) => {
   return (
-    <div className="youtubechannel">
-      <div className="bannerContainer">
-        <Image src={banner} alt="Banner" className="banner" priority />
-        <div className="overlayText">
-          <h2>1M+ subscribers</h2>
+    <div className={"mycommunitycontainer"}>
+      <div className={"banner"}>
+        <Image
+          src={background}
+          alt="Community Banner"
+          className={"bannerImage"}
+          priority
+        />
+        <div className={"overlay"}>
+          <h1>My Community</h1>
         </div>
       </div>
 
-      <div className="profileSection">
-        <Image src={logo} alt="Logo" className="logo" />
-        <div className="details">
-          <h1>Code Tech</h1>
-          <p>@codetech · 2.01M subscribers · 1.1K videos</p>
-          <p>We make videos about technology and programming.</p>
-          <p>This is youtube channel: {params.slug}</p>
-          <button className="subscribe">Subscribe</button>
-        </div>
+      <div className={"content"}>
+        <p>Welcome to my community page!</p>
+        <p>This is the YouTube Channel: {params.slug}</p>
+        <p>This is the Channel: {params.slugs}</p>
+        <Channelcomp />
+        <Error />
       </div>
     </div>
   );
 };
 
-export default YouTubeChannel;
+export default MyCommunity;
