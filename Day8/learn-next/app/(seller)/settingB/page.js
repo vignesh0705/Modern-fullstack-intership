@@ -1,0 +1,10 @@
+const Setting=async()=>{
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    return(
+        <div>
+            <h1>setting page for the seller</h1>
+        </div>
+    )
+}
+
+export default Setting
