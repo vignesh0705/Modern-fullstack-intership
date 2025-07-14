@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 const LoginPage = () => {
@@ -7,29 +7,23 @@ const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  useEffect(() => {
-    const role = localStorage.getItem("role");
-    if (role === "admin") {
-      router.push("/blogB");
-    } else if (role === "user") {
-      router.push("/blogA");
-    }
-  }, []);
-
   const handleLogin = (e) => {
     e.preventDefault();
+
     if (email === "admin@example.com" && password === "123456") {
       localStorage.setItem("isLoggedIn", "true");
       localStorage.setItem("role", "admin");
       alert("Admin login successful!");
-      router.push("/blogB");
+      router.push("/blogB"); 
     } else if (email === "user@example.com" && password === "123456") {
       localStorage.setItem("isLoggedIn", "true");
       localStorage.setItem("role", "user");
       alert("User login successful!");
       router.push("/blogA");
     } else {
-      alert("Invalid credentials. Try:\nAdmin: admin@example.com / 123456\nUser: user@example.com / 123456");
+      alert(
+        "Invalid credentials. Try:\nAdmin: admin@example.com / 123456\nUser: user@example.com / 123456"
+      );
     }
   };
 
@@ -66,7 +60,9 @@ const LoginPage = () => {
         <a href="#">Forgot password?</a>
       </div>
 
-      <button type="submit" className="login-button">Login</button>
+      <button type="submit" className="login-button">
+        Login
+      </button>
 
       <p className="login-footer">
         Don’t have an account? <a href="#">Sign up</a>

@@ -1,0 +1,19 @@
+/* .navbar-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  background-color: black;
+  border-bottom: 2px solid ghostwhite;
+}
+
+.navbar-container a {
+  text-decoration: none;
+  color: ghostwhite;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-container a:hover {
+  background-color: darkgray;
+} */

@@ -1,0 +1,24 @@
+.user-detail {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-detail-container {
+    text-align: center;
+}
+.user-detail-container h1 {
+    font-size: 2rem;
+    color: #333;
+}
+.user-detail-container p {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.loading {
+    font-size: 1.5rem;
+    color: black;
+}

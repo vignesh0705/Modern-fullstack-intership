@@ -1,10 +1,10 @@
-const Update =async()=>{
+const About=async()=>{
     await new Promise((resolve) => setTimeout(resolve, 2000));
     return(
         <div>
-            <h1>sign-up page  for Admin</h1>
+            <h1>About page for the buyer</h1>
         </div>
     )
 }
 
-export default Update;
+export default About;

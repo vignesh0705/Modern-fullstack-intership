@@ -5,17 +5,29 @@ import { useEffect, useState } from "react";
 
 const AdminNavbar = () => {
   const router = useRouter();
-  const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(true);
+  const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(false);
 
   useEffect(() => {
-    const loggedIn = localStorage.getItem("isAdminLoggedIn") === "true";
-    setIsAdminLoggedIn(loggedIn);
+    const checkLogin = () => {
+      const role = localStorage.getItem("role");
+      setIsAdminLoggedIn(role === "admin");
+    };
+
+    checkLogin();
+
+    // Optional: Listen to storage changes (e.g., across tabs)
+    window.addEventListener("storage", checkLogin);
+
+    return () => {
+      window.removeEventListener("storage", checkLogin);
+    };
   }, []);
 
   const handleLogout = () => {
-    localStorage.removeItem("isAdminLoggedIn");
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("role");
     setIsAdminLoggedIn(false);
-    alert("Admin logged out.");
+    alert("Logged out");
     router.push("/loginB");
   };
 

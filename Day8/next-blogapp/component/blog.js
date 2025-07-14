@@ -2,7 +2,6 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 
-// BlogBox Component
 const BlogBox = ({ id, title, image, summary, date, author }) => {
   const router = useRouter();
 
