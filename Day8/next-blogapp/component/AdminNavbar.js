@@ -15,7 +15,6 @@ const AdminNavbar = () => {
 
     checkLogin();
 
-    // Optional: Listen to storage changes (e.g., across tabs)
     window.addEventListener("storage", checkLogin);
 
     return () => {

@@ -11,7 +11,7 @@ const CreateBlogPage = () => {
   });
 
   const [blogs, setBlogs] = useState([]);
-  const [editIndex, setEditIndex] = useState(null); // for tracking which blog is being edited
+  const [editIndex, setEditIndex] = useState(null); 
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -24,19 +24,19 @@ const CreateBlogPage = () => {
     e.preventDefault();
 
     if (editIndex !== null) {
-      // Update existing blog
+
       const updatedBlogs = [...blogs];
       updatedBlogs[editIndex] = formData;
       setBlogs(updatedBlogs);
       setEditIndex(null);
       alert("Blog updated successfully!");
     } else {
-      // Add new blog
+
       setBlogs((prev) => [...prev, formData]);
       alert("Blog created successfully!");
     }
 
-    // Reset form
+    
     setFormData({
       title: "",
       summary: "",
