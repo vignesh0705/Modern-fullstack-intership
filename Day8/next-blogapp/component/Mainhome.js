@@ -13,6 +13,7 @@ const HomePage = () => {
         <div className="hero-buttons">
           {/* <button onClick={() => router.push("/blogA")} className="btn explore">Explore Blogs</button> */}
           <button onClick={() => router.push("/loginA")} className="btn login">Login</button>
+          <button onClick={() => router.push("/loginB")} className="btn login">Admin Login</button>
         </div>
       </div>
 
